@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import "./App.css"
 
 function App() {
     let [userMove, setUserMove] = useState("")
@@ -32,8 +31,7 @@ function App() {
         }
     }
 
-    return <div className='container'>
-      <h1>Rock Paper Scissors</h1>
+    return <div className="container">
         <h2>Computer: {emojisData[computerMove]}  You: {emojisData[userMove]}</h2>
         <h3>{result}</h3>
         <button onClick={() => handelClick("Rock")}>🪨</button>
